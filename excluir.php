@@ -4,7 +4,7 @@ include("conecta.php");
     // Para pegar o texto dos inputs:
     $matricula   = $_GET ["M"];
 
-    $comando = $pdo->prepare("DELETE FROM escola WHERE matricula=$matricula");
+    $comando = $pdo->prepare("DELETE FROM alunos WHERE matricula=$matricula");
 
     $resultado = $comando->execute();
 
